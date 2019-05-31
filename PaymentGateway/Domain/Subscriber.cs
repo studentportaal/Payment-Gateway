@@ -43,9 +43,9 @@ namespace PaymentGateway.Domain
                 async (PubsubMessage message, CancellationToken cancel) =>
                 {
                     Byte[] encodedBytes = message.Data.ToArray();
+                    var jsonString = Encoding.UTF8.GetString(message.Data.ToArray());
                     string decodedString =  encoding.GetString(encodedBytes);
-                    //await handler.PersistAsync(message);
-                    await Console.Out.WriteLineAsync( $"Message {message.MessageId}: {decodedString}");
+                    await handler.PersistAsync(message.MessageId, decodedString);
                     httpHandler.SetTopOfTheDay(decodedString, cancel);
                     return acknowledge ? SubscriberClient.Reply.Ack
                         : SubscriberClient.Reply.Nack;
