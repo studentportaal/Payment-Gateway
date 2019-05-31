@@ -1,1 +1,1 @@
-# Payment-Gateway [![Build Status](https://travis-ci.org/studentportaal/Payment-Gateway.svg?branch=master)](https://travis-ci.org/studentportaal/Payment-Gateway) 
+# Payment-Gateway [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/studentportaal/Payment-Gateway/maintainability) [![Build Status](https://travis-ci.org/studentportaal/Payment-Gateway.svg?branch=master)](https://travis-ci.org/studentportaal/Payment-Gateway) 
