@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading;
@@ -13,7 +14,7 @@ namespace PaymentGateway.Domain
 
         public async Task SetTopOfTheDay(object content, CancellationToken cancellationToken)
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "http://localhost:9000/joboffer/topofday");
+            var request = new HttpRequestMessage(HttpMethod.Post, Environment.GetEnvironmentVariable("API_URL"));
             //var json = JsonConvert.SerializeObject(content);
             var stringcontent = new StringContent(content.ToString(), Encoding.UTF8, "application/json");
             request.Content = stringcontent;

@@ -1,0 +1,19 @@
+service: payment-gateway
+
+instance_class: F1
+
+runtime: aspnetcore
+env: flex
+
+automatic_scaling:
+    max_num_instances: 1
+    
+    
+resources:
+  cpu: .5
+  memory_gb: 0.90
+  disk_size_gb: 10
+  
+env_variables:
+  API_URL: 'https://api-dot-pts6-bijbaan.appspot.com/joboffer/topofday'
+    

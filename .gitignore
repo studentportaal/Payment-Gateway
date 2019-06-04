@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+.vs/PaymentGateway/DesignTimeBuild/.dtbcache
+.vs/PaymentGateway/v16/.suo
+.vs/PaymentGateway/v16/Server/sqlite3/storage.ide

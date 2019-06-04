@@ -12,7 +12,8 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\Danie\\Downloads\\pts6-bijbaan-05e5690a53fd.json"
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:\\Users\\Danie\\Downloads\\pts6-bijbaan-05e5690a53fd.json",
+        "API_URL": "http://localhost:9000/joboffer/topofday"
       }
     },
     "PaymentGateway": {
